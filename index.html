@@ -1,14 +1,22 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <title> Motion Detector Prototype</title>
+    <style media="screen">
+      #movement{
+        border: 1px solid red;
+        position: absolute;
+      }
+    </style>
   </head>
   <body>
-    <video id="webCamWindow" autoplay></video>
+    <video id="webCamWindow" autoplay style="opacity: 0"></video>
+    <canvas id="mimic-canvas" width="64" height="48"></canvas>
+    <div id= 'movement'></div>
     <script type="text/javascript" src="/assets/js/global.js"></script>
-    <script type="text/javascript" src="/assets/js/engine/MainCore.js"></script>
+    <script type="text/javascript" src="/assets/js/engine/CompareImage.js"></script>
     <script type="text/javascript" src="/assets/js/engine/CaptureImageCam.js"></script>
+    <script type="text/javascript" src="/assets/js/engine/MainCore.js"></script>
     <script type="text/javascript" src="/assets/js/main.js"></script>
     <script type="text/javascript" src="/assets/js/script.js"></script>
   </body>
